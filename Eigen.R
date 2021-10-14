@@ -1,0 +1,11 @@
+S = c(0.856,0.635,0.173,0.635,0.568,0.127,0.173,0.128,0.171)
+S = matrix(S,3,3)
+Determinant_of_S = det(S)
+st_dev_matrix = sqrt(diag(S))
+st_dev_matrix_inv = inv(st_dev_matrix)
+Ds = c(0.9252,0,0,0,0.7536,0,0,0,0.4135)
+Ds = matrix(Ds,3,3)
+solve(Ds)
+
+matrix1 = matrix(c(1,4, 4, 100),2,2)
+eigen(matrix1)
